@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета — Do English</title>
+<meta name="description" content="Заполните короткую анкету, и мы подберём для вас подходящую программу обучения английскому языку.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo logo--compact" aria-label="Do English — на главную">
+      <img src="logo.png" alt="Do English" class="logo-img logo-img--compact">
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="logo logo--hero">
+        <img src="logo.png" alt="Do English — Школа Английского, Diana Orshanskaya" class="logo-img logo-img--hero">
+      </div>
+
+      <h1 class="hero-title">Начните изучать английский уже сегодня!</h1>
+      <p class="hero-subtitle">Заполните короткую анкету за одну минуту, и мы подберём для вас подходящую программу обучения.</p>
+      <button type="button" class="btn btn-primary btn-large" id="startBtn">Заполнить анкету</button>
+    </div>
+  </section>
+
+  <!-- WIZARD -->
+  <section class="wizard" id="wizard" hidden>
+    <div class="container wizard-container">
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progressText">Шаг 1 из 4</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <form id="quizForm" novalidate>
+        <!-- Ловушка для спам-ботов: людям не видна, боты её заполняют -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Не заполняйте это поле</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+
+        <!-- Step 1 -->
+        <div class="step" data-step="1">
+          <h2 class="step-title">Личная информация</h2>
+          <p class="step-desc">Расскажите немного о себе</p>
+
+          <div class="field">
+            <label for="parentFirstName">Имя родителя</label>
+            <input type="text" id="parentFirstName" name="parentFirstName" placeholder="Введите имя" autocomplete="given-name" required>
+            <span class="error-msg" data-error-for="parentFirstName"></span>
+          </div>
+
+          <div class="field">
+            <label for="parentLastName">Фамилия родителя</label>
+            <input type="text" id="parentLastName" name="parentLastName" placeholder="Введите фамилию" autocomplete="family-name" required>
+            <span class="error-msg" data-error-for="parentLastName"></span>
+          </div>
+
+          <div class="field">
+            <label for="childFirstName">Имя ребёнка</label>
+            <input type="text" id="childFirstName" name="childFirstName" placeholder="Введите имя ребёнка" required>
+            <span class="error-msg" data-error-for="childFirstName"></span>
+          </div>
+
+          <div class="field">
+            <label for="childLastName">Фамилия ребёнка</label>
+            <input type="text" id="childLastName" name="childLastName" placeholder="Введите фамилию ребёнка" required>
+            <span class="error-msg" data-error-for="childLastName"></span>
+          </div>
+
+
+          <div class="field">
+            <label for="age">Возраст ребёнка</label>
+            <input type="number" id="age" name="age" placeholder="Введите возраст" min="5" inputmode="numeric" required>
+            <span class="error-msg" data-error-for="age"></span>
+          </div>
+
+          <div class="field">
+            <label>Пол ребёнка</label>
+            <div class="pill-options" data-name="gender">
+              <label class="pill-option">
+                <input type="radio" name="gender" value="Мужской" required>
+                <span>Мужской</span>
+              </label>
+              <label class="pill-option">
+                <input type="radio" name="gender" value="Женский" required>
+                <span>Женский</span>
+              </label>
+            </div>
+            <span class="error-msg" data-error-for="gender"></span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" data-step="2" hidden>
+          <h2 class="step-title">Контактные данные</h2>
+          <p class="step-desc">Как с вами связаться?(желательно вводить данные родителя)</p>
+
+          <div class="field">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" inputmode="tel" required>
+            <span class="error-msg" data-error-for="phone"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Электронная почта <span class="optional">(необязательно)</span></label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="email">
+            <span class="error-msg" data-error-for="email"></span>
+          </div>
+
+          <div class="field">
+            <label for="telegram">Telegram <span class="optional">(необязательно)</span></label>
+            <input type="text" id="telegram" name="telegram" placeholder="@username">
+            <span class="error-msg" data-error-for="telegram"></span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" data-step="3" hidden>
+          <h2 class="step-title">Информация об обучении</h2>
+          <p class="step-desc">Поможет подобрать программу под вас</p>
+
+          <div class="field">
+            <label>Изучали ли вы английский язык до нас?</label>
+            <div class="option-list" data-name="level">
+              <label class="option-row"><input type="radio" name="level" value="Никогда не изучал"><span class="radio-dot"></span>Никогда не изучал</label>
+              <label class="option-row"><input type="radio" name="level" value="Изучал только в школе"><span class="radio-dot"></span>Изучал только в школе</label>
+              <label class="option-row"><input type="radio" name="level" value="Изучал дополнительно"><span class="radio-dot"></span>Изучал дополнительно</label>
+            </div>
+            <span class="error-msg" data-error-for="level"></span>
+            <div class="field" id="levelDetailsField" hidden>
+              <label for="levelDetails">Где вы дополнительно изучали английский? <span class="optional">(необязательно)</span></label>
+              <input type="text" id="levelDetails" name="levelDetails" maxlength="300" placeholder="Например, курсы, репетитор, за границей...">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Для чего вам нужен английский язык?</label>
+            <div class="option-list" data-name="purpose">
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для школы"><span class="check-box"></span>Для школы</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для университета"><span class="check-box"></span>Для университета</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для работы"><span class="check-box"></span>Для работы</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для путешествий"><span class="check-box"></span>Для путешествий</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для переезда"><span class="check-box"></span>Для переезда</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для сдачи экзаменов"><span class="check-box"></span>Для сдачи экзаменов</label>
+              <label class="option-row"><input type="checkbox" name="purpose" value="Для себя"><span class="check-box"></span>Для себя</label>
+            </div>
+            <span class="error-msg" data-error-for="purpose"></span>
+          </div>
+
+          <div class="field">
+            <label>Какой формат обучения вы предпочитаете?</label>
+            <div class="option-list" data-name="format">
+              <label class="option-row"><input type="radio" name="format" value="Онлайн"><span class="radio-dot"></span>Онлайн</label>
+              <label class="option-row"><input type="radio" name="format" value="Очно"><span class="radio-dot"></span>Очно</label>
+              <label class="option-row"><input type="radio" name="format" value="Не имеет значения"><span class="radio-dot"></span>Не имеет значения</label>
+            </div>
+            <span class="error-msg" data-error-for="format"></span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" data-step="4" hidden>
+          <h2 class="step-title">Дополнительная информация</h2>
+          <p class="step-desc">Расскажите о своих целях или задайте вопрос преподавателю</p>
+
+          <div class="field">
+            <label for="about">Ваш комментарий <span class="optional">(необязательно)</span></label>
+            <textarea id="about" name="about" rows="5" maxlength="2000" placeholder="Расскажите немного о себе, своих целях или задайте вопрос..."></textarea>
+          </div>
+
+          <div class="field field-consent">
+            <label class="checkbox-row">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span class="check-box"></span>
+              <span>Я согласен(на) на <a href="#privacy" id="privacyLink">обработку персональных данных</a> в соответствии с политикой конфиденциальности</span>
+            </label>
+            <span class="error-msg" data-error-for="consent"></span>
+          </div>
+        </div>
+
+        <div class="wizard-nav">
+          <button type="button" class="btn btn-ghost" id="prevBtn" hidden>Назад</button>
+          <button type="button" class="btn btn-primary" id="nextBtn">Далее</button>
+          <button type="submit" class="btn btn-primary" id="submitBtn" hidden>Отправить анкету</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- SUCCESS -->
+  <section class="success" id="success" hidden>
+    <div class="container success-inner">
+      <div class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none"/><path fill="none" d="M14 27l7 7 17-17"/></svg>
+      </div>
+      <h2>Спасибо! Ваша анкета успешно отправлена.</h2>
+      <p>В ближайшее время с вами свяжется менеджер школы Do English и поможет подобрать подходящий курс обучения.</p>
+      <button type="button" class="btn btn-primary btn-large" id="homeBtn">Вернуться на главную</button>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy" id="privacy" hidden>
+    <div class="container privacy-inner">
+      <h2>Политика конфиденциальности</h2>
+      <p>Школа Do English обрабатывает предоставленные вами персональные данные (имя и фамилия родителя, имя и фамилия ребёнка, возраст, контактные данные) исключительно с целью подбора программы обучения и связи с вами. Данные не передаются третьим лицам и хранятся в соответствии с требованиями законодательства о защите персональных данных. Заполняя анкету, вы даёте согласие на обработку указанных данных.</p>
+      <button type="button" class="btn btn-ghost" id="closePrivacyBtn">Закрыть</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-phone">Телефон преподавателя: <a href="tel:+79951601249">+7 (995) 160-12-49</a></p>
+    <p>© 2026 Do English — Diana Orshanskaya. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

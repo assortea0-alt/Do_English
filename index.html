@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do English — Школа английского языка для детей 5–16 лет в Новокузнецке</title>
+<meta name="description" content="Do English — школа английского языка для детей и подростков на Ильинке в Новокузнецке. Современные методики, интерактивные технологии и тёплая атмосфера. Запишитесь на диагностику.">
+<meta name="theme-color" content="#FBF8FF">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="header-logo" data-goto="home" aria-label="Do English — на главную">
+      <img src="logo.png" alt="Do English">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Разделы сайта">
+      <button class="nav-tab active" data-tab="home">Главная</button>
+      <button class="nav-tab" data-tab="about">О школе</button>
+      <button class="nav-tab" data-tab="why">Почему мы</button>
+      <button class="nav-tab" data-tab="events">События</button>
+      <button class="nav-tab" data-tab="certificates">Сертификаты</button>
+      <button class="nav-tab nav-tab--ext" data-external>Отзывы<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></button>
+      <button class="nav-tab" data-tab="contacts">Контакты</button>
+    </nav>
+
+    <div class="header-side">
+      <div class="social-row">
+        <a class="social-btn" href="https://vk.ru/do__english" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте"><span class="social-vk">VK</span></a>
+        <a class="social-btn" href="https://www.instagram.com/do__english?igsh=czZ6bmx5OGNoYXYz" target="_blank" rel="noopener" aria-label="Мы в Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+      </div>
+      <a class="btn btn-primary btn-sm header-cta" href="anketa.html">Записаться</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HOME ============ -->
+  <section class="panel" data-panel="home">
+    <div class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <div class="container hero-inner">
+        <span class="hero-kicker"><span class="hero-kicker-dot"></span>Новокузнецк • Ильинка + онлайн-обучение</span>
+
+        <h1 class="hero-title">Английский, на котором дети <span class="grad-text">играют, общаются и&nbsp;думают</span></h1>
+
+        <p class="hero-text">В Do English дети не зубрят слова ради оценок. Они играют, исследуют, общаются, создают проекты и постепенно начинают думать на английском языке.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="anketa.html">Записаться на диагностику</a>
+          <button class="btn btn-secondary btn-lg" id="lessonFlowBtn">Как проходит урок
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m6 13 6 6 6-6"></path></svg>
+          </button>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/hero.jpg" alt="Основатель школы Диана Оршанская с учениками Do English на летнем празднике" width="1800" height="1012">
+        </div>
+
+        <ul class="hero-facts">
+          <li><strong>5–16</strong><span>лет — возраст наших учеников</span></li>
+          <li><strong>15+</strong><span>лет работы с детьми</span></li>
+          <li><strong>C1</strong><span>кембриджский сертификат преподавателя</span></li>
+          <li><strong>24/7</strong><span>чат поддержки для родителей</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section section--tint" id="lessonFlow">
+      <div class="container">
+        <div class="block-head">
+          <span class="eyebrow">Как проходит занятие</span>
+          <h2 class="section-title">Урок, который дети не хотят заканчивать</h2>
+          <p class="lede">Десять шагов, в которых живое общение, движение и игра сменяют друг друга — поэтому ребёнок не успевает заскучать.</p>
+        </div>
+        <ol class="lesson-track">
+          <li class="lesson-step"><span class="lesson-num">01</span><div class="lesson-icon"><span class="emoji">👋</span></div><span class="lesson-label">Приветствие</span></li>
+          <li class="lesson-step"><span class="lesson-num">02</span><div class="lesson-icon"><span class="emoji">🔥</span></div><span class="lesson-label">Warm-up (разогрев): повторение / рециркуляция</span></li>
+          <li class="lesson-step"><span class="lesson-num">03</span><div class="lesson-icon"><span class="emoji">🖐️</span></div><span class="lesson-label">Интерактив</span></li>
+          <li class="lesson-step"><span class="lesson-num">04</span><div class="lesson-icon"><span class="emoji">💡</span></div><span class="lesson-label">Новая тема</span></li>
+          <li class="lesson-step"><span class="lesson-num">05</span><div class="lesson-icon"><span class="emoji">💬</span></div><span class="lesson-label">Разговорная практика</span></li>
+          <li class="lesson-step"><span class="lesson-num">06</span><div class="lesson-icon"><span class="emoji">📚</span></div><span class="lesson-label">Развитие навыков чтения, аудирования, грамматики</span></li>
+          <li class="lesson-step"><span class="lesson-num">07</span><div class="lesson-icon"><span class="emoji">🎮</span></div><span class="lesson-label">Игровые платформы и активности</span></li>
+          <li class="lesson-step"><span class="lesson-num">08</span><div class="lesson-icon"><span class="emoji">✍️</span></div><span class="lesson-label">Самостоятельная практика + мониторинг</span></li>
+          <li class="lesson-step"><span class="lesson-num">09</span><div class="lesson-icon"><span class="emoji">📝</span></div><span class="lesson-label">Домашнее задание</span></li>
+          <li class="lesson-step"><span class="lesson-num">10</span><div class="lesson-icon"><span class="emoji">⭐</span></div><span class="lesson-label">Обратная связь</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="block-head">
+          <span class="eyebrow">Почему родители выбирают Do English</span>
+          <h2 class="section-title">Учимся так, чтобы язык остался с ребёнком</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon feature-icon--blue">🌍</div>
+            <h3>Современные мировые программы</h3>
+            <p>Основа обучения — признанные во всём мире британские программы Pearson, по которым учатся миллионы детей в разных странах.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon feature-icon--pink">🖱️</div>
+            <h3>Ребёнок — главный на уроке</h3>
+            <p>Дети сами выполняют задания, проходят игровые миссии и взаимодействуют с интерактивными упражнениями.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon feature-icon--yellow">💬</div>
+            <h3>Английский, которым пользуются</h3>
+            <p>Мы учим не переводить предложения, а понимать английский и использовать его в речи.</p>
+          </article>
+        </div>
+        <div class="section-more">
+          <a class="btn btn-ghost" href="#why" data-goto="why">Все 9 причин
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section--last">
+      <div class="container duo">
+        <article class="article-card">
+          <span class="article-tag">Статья для родителей</span>
+          <h3>6 типичных ошибок родителей при изучении английского языка</h3>
+          <p>Почему «How do you do?» больше не работает, чем критика мешает ребёнку и как стать с педагогом одной командой.</p>
+          <button class="btn btn-secondary" id="openMistakesBtn">Читать статью</button>
+        </article>
+        <div class="cta-card">
+          <h3>Запишитесь на диагностику</h3>
+          <p>Заполните короткую анкету — мы подберём программу и свяжемся с вами.</p>
+          <a class="btn btn-light btn-lg" id="fillFormBtn" href="anketa.html">Заполнить анкету</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="panel panel--decor" data-panel="about" hidden>
+    <div class="panel-decor" aria-hidden="true">
+      <span class="blob blob-a1"></span>
+      <span class="blob blob-a2"></span>
+    </div>
+    <div class="container panel-inner">
+      <div class="block-head">
+        <span class="eyebrow">О школе</span>
+        <h1 class="section-title">Английский как инструмент общения, а&nbsp;не предмет для зубрёжки</h1>
+        <p class="lede">Мы объединили лучшие мировые образовательные программы, современные цифровые технологии и тёплую атмосферу, в которой ребёнку хочется учиться снова и снова.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="col-media">
+          <img src="assets/about.jpg" alt="Ученики Do English с сертификатами на фоне логотипа школы" width="1050" height="1400">
+        </div>
+        <div class="col-text">
+          <p class="col-lead"><strong>Do English</strong> — школа английского языка для детей и подростков.</p>
+          <p>Мы убеждены, что английский должен стать для ребёнка инструментом общения, творчества и новых возможностей, а не предметом, который приходится зубрить.</p>
+          <p>Именно поэтому мы объединили современные мировые методики преподавания, интерактивные технологии и тёплую атмосферу, в которой детям комфортно учиться, ошибаться, задавать вопросы и постепенно достигать высоких результатов.</p>
+          <p>Сегодня в школе занимаются дети от 5 до 16 лет в небольших группах, сформированных по возрасту и уровню подготовки.</p>
+
+          <div class="support-note">
+            <span class="icon">💬</span>
+            <p>В школе работает круглосуточный чат поддержки, где можно задать вопрос, уточнить домашнее задание или получить необходимую информацию.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="founder-card">
+        <div class="founder-photos">
+          <div class="founder-photo"><img src="assets/founder.jpg" alt="Диана Оршанская — основатель школы Do English"></div>
+          <div class="founder-photo small"><img src="assets/founder-grad.jpg" alt="Диана Оршанская на выпускной церемонии в Великобритании"></div>
+        </div>
+        <div class="founder-info">
+          <p class="founder-role">Основатель школы</p>
+          <h3>Диана Оршанская</h3>
+          <p>Строит программы Do English на признанных мировых методиках и постоянно повышает квалификацию как преподаватель английского языка.</p>
+          <div class="tool-tags">
+            <span class="tool-tag">Красный диплом НГПА</span>
+            <span class="tool-tag">Cambridge C1</span>
+            <span class="tool-tag">Обучение в Лондоне и Кембридже</span>
+            <span class="tool-tag">15+ лет с детьми</span>
+          </div>
+          <a class="text-link" href="#certificates" data-goto="certificates">Посмотреть сертификаты
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="approach">
+        <div class="block-head">
+          <span class="eyebrow">Наш подход</span>
+          <h2 class="section-title">Мы создаём условия, в которых ребёнок:</h2>
+        </div>
+        <ul class="approach-list">
+          <li><span class="check">✓</span>не боится говорить</li>
+          <li><span class="check">✓</span>понимает английскую речь</li>
+          <li><span class="check">✓</span>уверенно читает</li>
+          <li><span class="check">✓</span>грамотно пишет</li>
+          <li><span class="check">✓</span>умеет применять язык в жизни</li>
+          <li><span class="check">✓</span>получает удовольствие от обучения</li>
+          <li><span class="check">✓</span>видит собственный прогресс и хочет двигаться дальше</li>
+          <li><span class="check">✓</span>опережает одноклассников в обычной школе</li>
+        </ul>
+      </div>
+
+      <div class="cta-band">
+        <div>
+          <h3>Познакомимся?</h3>
+          <p>Заполните короткую анкету — мы подберём программу и свяжемся с вами.</p>
+        </div>
+        <a class="btn btn-light btn-lg" href="anketa.html">Заполнить анкету</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="panel" data-panel="events" hidden>
+    <div class="container panel-inner">
+      <div class="block-head">
+        <span class="eyebrow">Наши события</span>
+        <h1 class="section-title">Праздники, на которых рождается любовь к языку</h1>
+        <p class="lede">На Рождестве, Хэллоуине и других мероприятиях дети смеются, общаются, играют и незаметно для себя осваивают живой разговорный английский — слова и выражения, которые редко встретишь в учебниках, но которыми пользуются носители языка каждый день.</p>
+        <p class="lede">Именно яркие эмоции помогают новой лексике запоминаться легко и надолго. А ещё они рождают любовь к английскому языку — такую, что наши ученики с нетерпением ждут следующего события, чтобы снова окунуться в эту атмосферу, встретиться с друзьями и открыть для себя что-то новое.</p>
+      </div>
+
+      <div class="event-chips">
+        <div class="event-chip"><span class="emoji">🎃</span><span>Хэллоуин</span></div>
+        <div class="event-chip"><span class="emoji">🎄</span><span>Новый год</span></div>
+        <div class="event-chip"><span class="emoji">🎨</span><span>Мастер-классы</span></div>
+        <div class="event-chip"><span class="emoji">🎓</span><span>Выпускной</span></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--wide"><img src="assets/halloween.jpg" alt="Праздник Хэллоуин в школе Do English — дети в костюмах" loading="lazy"><span class="gallery-caption">Хэллоуин</span></div>
+        <div class="gallery-item gallery-item--wide"><img src="assets/event-graduation.jpg" alt="Выпускной в школе Do English — дети с дипломами" loading="lazy"><span class="gallery-caption">Выпускной</span></div>
+        <div class="gallery-item gallery-item--wide"><img src="assets/event-outdoor.jpg" alt="Праздник на свежем воздухе в Do English" loading="lazy"><span class="gallery-caption">Наши праздники</span></div>
+        <div class="gallery-item"><img src="assets/cooking.jpg" alt="Кулинарный мастер-класс в Do English — дети с приготовленными десертами" loading="lazy"><span class="gallery-caption">Мастер-классы</span></div>
+        <div class="gallery-item"><img src="assets/lesson-1.jpg" alt="Интерактивное занятие в Do English" loading="lazy"><span class="gallery-caption">На занятиях</span></div>
+        <div class="gallery-item"><img src="assets/event-decor.jpg" alt="Праздничное оформление школы Do English" loading="lazy"><span class="gallery-caption">Атмосфера праздника</span></div>
+      </div>
+
+      <p class="gallery-more">Загляните в наши <a href="https://vk.ru/do__english" target="_blank" rel="noopener">фотоальбомы</a></p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="panel" data-panel="contacts" hidden>
+    <div class="container panel-inner">
+      <div class="block-head">
+        <span class="eyebrow">Контакты</span>
+        <h1 class="section-title">Свяжитесь с нами</h1>
+        <p class="lede">Позвоните, напишите в соцсетях или оставьте анкету — ответим на вопросы и подберём группу.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p class="contact-label">Телефон преподавателя</p>
+          <a class="contact-phone" href="tel:+79951601249">+7 (995) 160-12-49</a>
+          <div class="contact-line"><span class="dot">📍</span> Новокузнецк • Новоильинский район</div>
+          <div class="contact-line"><span class="dot">💻</span> Очные занятия и онлайн-обучение</div>
+          <div class="contact-line"><span class="dot">👦</span> Для детей от 5 до 16 лет</div>
+          <div class="contact-socials">
+            <a class="social-btn" href="https://vk.ru/do__english" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте"><span class="social-vk">VK</span></a>
+            <a class="social-btn" href="https://www.instagram.com/do__english?igsh=czZ6bmx5OGNoYXYz" target="_blank" rel="noopener" aria-label="Мы в Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-card">
+          <h3>Запишитесь на диагностику</h3>
+          <p>Заполните короткую анкету — мы подберём программу и свяжемся с вами.</p>
+          <a class="btn btn-light btn-lg" href="anketa.html">Заполнить анкету</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="panel" data-panel="certificates" hidden>
+    <div class="container panel-inner">
+      <div class="block-head">
+        <span class="eyebrow">Сертификаты</span>
+        <h1 class="section-title">Квалификация преподавателя</h1>
+        <p class="lede">Диана Оршанская регулярно проходит обучение и подтверждает квалификацию на профильных семинарах для преподавателей английского языка.</p>
+      </div>
+
+      <ul class="cred-grid">
+        <li><span class="cred-icon">🎓</span>Красный диплом НГПА</li>
+        <li><span class="cred-icon">📜</span>Кембриджский сертификат C1 (2017&nbsp;г.)</li>
+        <li><span class="cred-icon">🇬🇧</span>Обучение в Лондоне и Кембридже (2024&nbsp;г.)</li>
+        <li><span class="cred-icon">⭐</span>Более 15 лет работы с детьми разных возрастов 5&nbsp;–&nbsp;16 лет</li>
+      </ul>
+
+      <div class="cert-wrap">
+        <figure class="cert-card">
+          <img src="assets/cambridge-c1.jpg" alt="Кембриджский сертификат Certificate in Advanced English (C1), 2017 — Диана Оршанская" loading="lazy">
+          <figcaption class="cert-caption">Cambridge Certificate in Advanced English (C1), 2017</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="assets/diploma.jpg" alt="Диплом с отличием Кузбасской государственной педагогической академии — Диана Оршанская" loading="lazy">
+          <figcaption class="cert-caption">Диплом с отличием педагогической академии</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="assets/certificate-2.jpg" alt="Сертификат преподавателя английского языка — Диана Оршанская" loading="lazy">
+          <figcaption class="cert-caption">Bayswater London — Certificate of Achievement, 2024</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="assets/certificate.jpg" alt="Сертификат участника семинара для преподавателей английского языка — Диана Оршанская" loading="lazy">
+          <figcaption class="cert-caption"><strong>Диана Оршанская</strong> — сертификат участника семинара «Современный учитель английского языка» для преподавателей английского как иностранного</figcaption>
+        </figure>
+        <figure class="cert-card">
+          <img src="assets/certificate-3.jpg" alt="Сертификат преподавателя английского языка — Диана Оршанская" loading="lazy">
+          <figcaption class="cert-caption">Сертификат преподавателя английского языка</figcaption>
+        </figure>
+      </div>
+      <p class="cert-hint">Нажмите на документ, чтобы рассмотреть его ближе</p>
+
+      <div class="duo duo--top">
+        <div class="info-card">
+          <h3>В Do English мы:</h3>
+          <ul class="emoji-list">
+            <li><span>💬</span>учимся говорить уверенно</li>
+            <li><span>📖</span>практикуем язык в живых ситуациях</li>
+            <li><span>🎯</span>участвуем в speaking-клубах, мастер-классах</li>
+            <li><span>🌍</span>делаем обучение интересным, понятным и результативным</li>
+          </ul>
+        </div>
+        <div class="cta-card">
+          <h3>Мы — не просто школа</h3>
+          <p>Мы — сообщество родителей и детей, которые реально любят учиться и растут вместе. Если вы ещё не с нами — добро пожаловать!</p>
+          <p>Напишите в сообщения, чтобы получить пробное занятие или узнать детали ближайшего мастер-класса.</p>
+          <a class="btn btn-light" href="https://vk.ru/do__english" target="_blank" rel="noopener">Написать во ВКонтакте</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="panel panel--decor" data-panel="why" hidden>
+    <div class="panel-decor" aria-hidden="true">
+      <span class="blob blob-w1"></span>
+      <span class="blob blob-w2"></span>
+    </div>
+    <div class="container panel-inner">
+      <div class="block-head">
+        <span class="eyebrow">Почему родители выбирают Do English</span>
+        <h1 class="section-title">9 причин доверить нам обучение ребёнка</h1>
+      </div>
+
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-num">1</div>
+          <div>
+            <h3>Современные мировые программы</h3>
+            <p>Основой обучения являются признанные во всём мире британские программы Pearson, по которым учатся миллионы детей в разных странах. Они помогают развивать все языковые навыки одновременно: говорение, понимание речи, чтение, письмо, грамматику и словарный запас.</p>
+            <p>Для малышей используются лучшие мировые методики раннего обучения:</p>
+            <div class="tool-tags"><span class="tool-tag">Reading Eggs</span><span class="tool-tag">Jolly Phonics</span></div>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">2</div>
+          <div>
+            <h3>Урок, в котором ребёнок становится главным</h3>
+            <p>На занятиях дети не просто смотрят на экран. Они самостоятельно работают беспроводной мышкой, выполняют задания, проходят игровые миссии, выбирают ответы, двигают объекты и взаимодействуют с интерактивными упражнениями.</p>
+            <p>Им кажется, что они играют. На самом деле в этот момент развивается английская речь, внимание, память и мышление.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">3</div>
+          <div>
+            <h3>Интерактивные технологии</h3>
+            <p>На уроках используются современные образовательные сервисы и игровые платформы. Каждый урок сочетает живое общение, движение, технологии и практику английского языка.</p>
+            <div class="tool-tags"><span class="tool-tag">Genially</span><span class="tool-tag">Quizlet</span><span class="tool-tag">Wordwall</span><span class="tool-tag">Baamboozle</span><span class="tool-tag">Интерактивные презентации</span></div>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">4</div>
+          <div>
+            <h3>Английский, которым пользуются</h3>
+            <p>Мы учим не переводить предложения, а понимать английский и использовать его в речи. Дети задают вопросы, обсуждают темы, играют в ролевые игры, создают проекты и постепенно начинают говорить всё увереннее.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">5</div>
+          <div>
+            <h3>Домашнее задание, которое хочется выполнять</h3>
+            <p>Мы даём не только традиционные упражнения. Регулярно ученики получают креативные видео-задания: снимают небольшие ролики, рассказывают о себе, показывают свои увлечения, описывают события и предметы на английском языке.</p>
+            <p>Так ребёнок развивает разговорную речь, учится свободнее говорить на камеру, видит себя со стороны и сохраняет собственное портфолио языкового роста.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">6</div>
+          <div>
+            <h3>Контроль прогресса</h3>
+            <p>После каждого раздела программы ученики проходят тестирование. У младших групп оно проходит в игровой форме. У старших — на современной интерактивной платформе, что позволяет объективно отслеживать прогресс и быстро находить темы, требующие повторения.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">7</div>
+          <div>
+            <h3>Подготовка к ОГЭ и ЕГЭ начинается заранее</h3>
+            <p>Мы не откладываем подготовку к экзаменам на последний год. Подготовка, необходимая для ОГЭ и ЕГЭ, интегрирована в современные учебные программы Pearson, поэтому ученики подходят к экзаменам значительно увереннее.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">8</div>
+          <div>
+            <h3>Домашняя работа без перегрузки</h3>
+            <p>Регулярные домашние задания помогают закреплять материал между уроками. Мы стремимся сделать их разнообразными, интересными и посильными, чтобы английский становился естественной частью жизни ребёнка, а не очередной обязанностью.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">9</div>
+          <div>
+            <h3>Поддержка семьи</h3>
+            <p>Родители никогда не остаются один на один с возникающими вопросами.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-band">
+        <div>
+          <h3>Начнём с диагностики</h3>
+          <p>Заполните короткую анкету — мы подберём программу и свяжемся с вами.</p>
+        </div>
+        <a class="btn btn-light btn-lg" href="anketa.html">Заполнить анкету</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ MODAL: 6 mistakes ============ -->
+<div class="modal-overlay" id="mistakesModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mistakesTitle">
+    <div class="modal-head">
+      <h2 id="mistakesTitle">6 типичных ошибок родителей при изучении английского языка</h2>
+      <button class="modal-close" id="closeMistakesBtn" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="modal-body">
+      <p>Однажды я занималась с девочкой второго класса. На каждом уроке мы начинали с вопроса How are you? Она уже умела отвечать десятком разных способов: I'm great! I'm excited! I'm tired! I'm happy! — живо, естественно, как это делают современные носители языка.</p>
+      <p>Как-то папа спросил её: How do you do? (устаревшее приветствие). Именно так учили его самого больше 30 лет назад. Девочка растерялась. Папа сразу сделал вывод: «Занимаешься уже год и не знаешь таких простых вещей».</p>
+      <p>Именно в такие моменты понимаешь, насколько важно смотреть на обучение глазами современного педагога, а не через призму собственного школьного опыта.</p>
+
+      <h3>1. Критика вместо поддержки</h3>
+      <p>Родители не обязаны быть педагогами. Но когда взрослый эмоционально реагирует даже на мелочи, ребёнок начинает бояться ошибаться.</p>
+      <p>Хороший преподаватель знает: сначала нужно сохранить интерес и уверенность в себе. Только потом — знания. Потому что без мотивации далеко не уедешь.</p>
+
+      <h3>2. Медвежья услуга</h3>
+      <p>Часто репетитора нанимают, чтобы он «помог со школой». В итоге занятия превращаются в бесконечное домашнее задание и разбор того, что ребёнок не понял на уроке.</p>
+      <p>Это как постоянно косить траву: сегодня всё красиво, а через несколько дней она снова выросла.</p>
+      <p>Профессиональный педагог работает иначе. Он не закрывает отдельные пробелы, а шаг за шагом строит прочный фундамент. Тогда ребёнок не просто начинает понимать язык, а со временем догоняет школьную программу и перегоняет сверстников.</p>
+      <p>Первые настоящие успехи рождают уверенность в себе. А когда ребёнок начинает понимать, что у него получается, появляется желание учиться ещё больше. Именно так рождаются мотивация, интерес и те самые крылья, которые помогают ему лететь дальше.</p>
+
+      <h3>3. Проверка вместо игры</h3>
+      <p>После работы у родителей часто просто не остаётся сил придумывать игры. И это совершенно нормально.</p>
+      <p>Но если дома английский — это только правила, опросы и поиск ошибок, интерес быстро исчезает.</p>
+      <p>Для ребёнка игра — не развлечение, а самый естественный способ учиться.</p>
+
+      <h3>4. «Пусть сначала русский выучит»</h3>
+      <p>Наверное, это одна из самых популярных фраз.</p>
+      <p>Но правда в том, что одно другому совсем не мешает. Наоборот.</p>
+      <p>Изучая английский, ребёнок учится не просто запоминать слова. Он учится рассуждать, строить мысли, выражать своё мнение, поддерживать разговор на разные темы. Он узнаёт, что одну и ту же мысль можно выразить десятком разных способов, открывает для себя синонимы, оттенки значений и богатство языка.</p>
+      <p>И именно этого сегодня многим детям так не хватает — умения говорить, объяснять, аргументировать и красиво выражать свои мысли.</p>
+
+      <h3>5. «Я лучше знаю»</h3>
+      <p>Очень часто родители искренне уверены, что знают, как правильно. Ведь когда-то сами учили английский.</p>
+      <p>Но язык меняется. Меняются нормы произношения, современная лексика и подходы к преподаванию.</p>
+      <p>Я нередко наблюдаю, как ребёнок спорит с родителем — и оказывается прав. Не потому, что умнее мамы или папы, а потому что опирается на современные знания, полученные от педагога школы Do English.</p>
+      <p>Поэтому не стоит спорить с ребёнком, если он говорит иначе, чем учили вас. Очень часто он действительно прав, потому что язык не стоит на месте.</p>
+
+      <h3>6. Запрет на ошибку</h3>
+      <p>Самая болезненная ошибка — дать ребёнку почувствовать, что ошибаться стыдно.</p>
+      <p>Ошибка — это не показатель ума. Это ступенька к развитию.</p>
+      <p>Можно сделать так, что после ошибки ребёнок опустит глаза, сожмётся в маленький комочек и будет бояться открыть рот. А можно помочь ему расправить крылья, поверить в себя и захотеть лететь дальше.</p>
+      <p>Именно это и умеет делать профессиональный педагог.</p>
+
+      <hr>
+      <p>Все родители хотят для своих детей самого лучшего. Но знать английский и уметь ему научить — не одно и то же.</p>
+      <p>Когда родители и педагог становятся одной командой, ребёнок перестаёт бояться языка. Он начинает понимать, любить и использовать его с удовольствием. И именно тогда появляются результаты, которыми гордятся все — и родители, и ребёнок, и учитель.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX: image preview ============ -->
+<div class="img-lightbox" id="imgLightbox" hidden>
+  <button class="img-lightbox-close" id="imgLightboxClose" aria-label="Закрыть">✕</button>
+  <img id="imgLightboxPic" src="" alt="">
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo"><img src="logo.png" alt="Do English"></span>
+      <span>Школа английского языка для детей 5–16 лет</span>
+    </div>
+
+    <nav class="footer-nav" aria-label="Разделы сайта в подвале">
+      <a href="#about" data-goto="about">О школе</a>
+      <a href="#why" data-goto="why">Почему мы</a>
+      <a href="#events" data-goto="events">События</a>
+      <a href="#certificates" data-goto="certificates">Сертификаты</a>
+      <a href="#contacts" data-goto="contacts">Контакты</a>
+    </nav>
+
+    <div class="footer-contact">
+      <p class="footer-phone">Телефон преподавателя: <a href="tel:+79951601249">+7 (995) 160-12-49</a></p>
+      <div class="footer-socials">
+        <a class="social-btn" href="https://vk.ru/do__english" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте"><span class="social-vk">VK</span></a>
+        <a class="social-btn" href="https://www.instagram.com/do__english?igsh=czZ6bmx5OGNoYXYz" target="_blank" rel="noopener" aria-label="Мы в Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 Do English — Diana Orshanskaya. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
